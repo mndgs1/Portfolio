@@ -1,0 +1,239 @@
+* {
+    color: #fff;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    margin: 0px 40px 0px;
+}
+
+.form__cta,
+a {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+.form__cta:hover,
+a:hover {
+    transform: scale(1.04);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+.header__container,
+main,
+footer {
+    max-width: 1600px;
+    margin: auto;
+}
+
+footer p {
+    font-size: initial;
+}
+
+section {
+    padding-top: 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__container {
+    gap: 20px;
+}
+
+.hero__section {
+    padding-top: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+label,
+p {
+    margin-top: 10px;
+}
+
+.image__container {
+    display: flex;
+    align-items: center;
+}
+
+.image__container img {
+    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__logo a:hover {
+    transform: none;
+}
+
+.anchor__container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+.cta {
+    border: 2px solid #f06bf2;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #f06bf2;
+    font-weight: bold;
+}
+
+.cta__github {
+    color: #3c38a6;
+    border-color: #3c38a6;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.form__cta {
+    margin: auto;
+    background-color: black;
+    box-shadow: none;
+    transition: 0.3s;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.input__container {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+input,
+textarea {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 10px 0px 0px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+@media (min-width: 800px) {
+    .form__cta,
+    a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+    }
+    label,
+    p {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+
+    label,
+    textarea,
+    input {
+        padding: 16px 0px 0px;
+        width: 50%;
+    }
+
+    .hero__section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 101px;
+    }
+
+    .project__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 60px;
+    }
+
+    .project__container h3 {
+        margin-top: 0px;
+    }
+
+    .project__container p {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    a,
+    .form__cta {
+        font-size: 2rem;
+    }
+    .hero__section {
+        padding-top: 116px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    label,
+    p {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+}
